@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Instagram Clone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="profile-link">Profile</a></li>
+                    <li><a href="#" id="reels-link">Reels</a></li>
+                    <li><a href="#" id="login-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="login-form" style="display: none;">
+                <h2>Login</h2>
+                <form id="login-form-element">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="register-link">Register here</a></p>
+            </section>
+            <section id="register-form" style="display: none;">
+                <h2>Register</h2>
+                <form id="register-form-element">
+                    <input type="text" id="register-username" placeholder="Username" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="login-link-2">Login here</a></p>
+            </section>
+            <section id="profile" style="display: none;">
+                <h2>User Profile</h2>
+                <p>Username: <span id="profile-username"></span></p>
+                <p>Bio: This is your bio.</p>
+            </section>
+            <section id="post-form" style="display: none;">
+                <h2>New Post</h2>
+                <form id="new-post-form">
+                    <input type="file" id="image-input" accept="image/*" required>
+                    <textarea id="caption-input" placeholder="Write a caption..." required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </section>
+            <section id="posts" style="display: none;">
+                <h2>Posts</h2>
+                <div class="post" id="post-template" style="display: none;">
+                    <img src="" alt="Post Image">
+                    <p class="caption"></p>
+                </div>
+            </section>
+            <section id="reels" style="display: none;">
+                <h2>Reels</h2>
+                <div class="reel-post" id="reel-template" style="display: none;">
+                    <img src="" alt="Reel Image">
+                    <p class="caption"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
